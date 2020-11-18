@@ -28,6 +28,7 @@ int main(int argc, char* argv[])
 	cout<<endl;	
 	cout<<"Accuracy on Test Set of size "<< TrainData->getNTestSamples() <<" datapoints is:" << model->calcError(TrainData, true, matResults)<<endl; 
 	cout<<endl;	
+	cout<<"Saved train.knn in this directory."<<endl;
 	return 0;
 }
 
