@@ -367,8 +367,7 @@ namespace caffe {
 			}
 		}	
 	}
- 
-/
+	
 	INSTANTIATE_CLASS(RPNLayer);
 	REGISTER_LAYER_CLASS(RPN);
  
