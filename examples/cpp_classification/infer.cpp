@@ -1,4 +1,3 @@
-#include "initiate.hpp" // To get function definitions
 #include <vector> // to get vector utility
 #include <opencv2/core/core.hpp>  // for opencv utilities
 #include <string>   // string library which support usage of strings
