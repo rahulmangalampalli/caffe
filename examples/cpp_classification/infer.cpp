@@ -48,6 +48,7 @@ void infer(string prototxt, string caffemodel, string data_path)
     embeddings = net_->blob_by_name("dense_5/dense_5/kernel/sig")->cpu_data(); //Collect last layer output into embedding vector
     float val = *embeddings; // get the fire probability into a variable
     std::string label = "Fire Probability: " + std::to_string(val*100.0); // Output probability on input image
+    cout << "Fire Probability: " + std::to_string(val*100.0) << endl;
     cv::putText(image,label,cv::Point(10, 25),cv::FONT_HERSHEY_SIMPLEX,0.7,CV_RGB(0, 255, 0),2); 
     cv::imshow("Detection", image); // shows probability on input image
     cv::waitKey(); // Press any key to quit
